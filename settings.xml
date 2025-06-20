@@ -1,0 +1,30 @@
+<settings>
+<servers>
+  <server>
+    <id>web-app-project-Web-App-Project-DevOps-CICD</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+<profiles>
+  <profile>
+    <id>web-app-project-Web-App-Project-DevOps-CICD</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>web-app-project-Web-App-Project-DevOps-CICD</id>
+        <url>https://web-app-project-745177545186.d.codeartifact.us-east-1.amazonaws.com/maven/Web-App-Project-DevOps-CICD/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles><mirrors>
+  <mirror>
+    <id>web-app-project-Web-App-Project-DevOps-CICD</id>
+    <name>web-app-project-Web-App-Project-DevOps-CICD</name>
+    <url>https://web-app-project-745177545186.d.codeartifact.us-east-1.amazonaws.com/maven/Web-App-Project-DevOps-CICD/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+</settings>
