@@ -7,3 +7,4 @@ sudo systemctll stop httpd.service  # Misspelled command will now cause script t
 
 # To be extra sure, we can also add an explicit exit code
 exit 1
+
